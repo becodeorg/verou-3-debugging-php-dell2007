@@ -9,6 +9,7 @@ error_reporting(E_ALL);
 // Look at the error you get, read it and it should tell you the issue...,
 // sometimes, even your IDE can tell you what's wrong
 // echo "Exercise 1 starts here:";
+echo "Exercise 1 starts here:";
 
 function new_exercise($x) /*Declare the variable so it can be use*/
 {
@@ -16,5 +17,15 @@ function new_exercise($x) /*Declare the variable so it can be use*/
     echo $block;
 }
 
-new_exercise(1);
+new_exercise(2);
 
+// === Exercise 2 ===
+// Below we create a week array with all days of the week.
+// We then try to print the first day which is monday, execute the code and see what happens.
+
+$week = ["monday", "tuesday", "wednesday", "thursday", "friday", "saturday", "sunday"];
+$monday = $week[0]; /*Change number to 0 as this is the first one in the array*/
+
+echo $monday;
+
+new_exercise(3);
