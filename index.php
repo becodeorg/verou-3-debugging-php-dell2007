@@ -51,3 +51,11 @@ foreach ($week as &$day) { /*Add & sign to make possible the changes otherwise i
 print_r($week);
 
 new_exercise(5);
+// === Exercise 5 ===
+// The result should be: "Copyright © <current year> - BeCode"
+function copyright(int $year)
+{
+    return "Copyright &copy; $year BeCode";
+}
+//print the copyright
+echo copyright(date('Y'));
