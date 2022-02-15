@@ -29,3 +29,11 @@ $monday = $week[0]; /*Change number to 0 as this is the first one in the array*/
 echo $monday;
 
 new_exercise(3);
+
+// === Exercise 3 ===
+// This should echo ` "Debugged !" `, fix it so that that is the literal text echo'ed
+
+$str = "Debugged ! Also very fun"; /*Change the quotes*/
+echo substr($str, 0, 10); /*Offset # will delete from the beginning and length will keep those letters*/
+
+new_exercise(4);
