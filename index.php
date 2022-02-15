@@ -37,3 +37,17 @@ $str = "Debugged ! Also very fun"; /*Change the quotes*/
 echo substr($str, 0, 10); /*Offset # will delete from the beginning and length will keep those letters*/
 
 new_exercise(4);
+
+// === Exercise 4 ===
+// Sometimes debugging code is just like looking up code and syntax...
+// The print_r($week) should give:  Array ( [0] => mon [1] => tues [2] => wednes [3] => thurs [4] => fri [5] => satur [6] => sun )
+// Look up whats going wrong with this code, and then fix it
+// Bonus: can you fix it with changing just one character? (hard)
+
+foreach ($week as &$day) { /*Add & sign to make possible the changes otherwise it'll only take the value*/
+    $day = substr($day, 0, -3);
+}
+
+print_r($week);
+
+new_exercise(5);
