@@ -59,3 +59,15 @@ function copyright(int $year)
 }
 //print the copyright
 echo copyright(date('Y'));
+
+new_exercise(6);
+// === Exercise 6 ===
+// The array should be printing every letter of the alphabet (a-z)
+// Fix the code so the for loop pushes each letter of the alphabet in the array
+
+$arr = [];
+for ($i = "A"; $i != "AA"; $i++) {
+    array_push($arr, $i . ",");
+}
+
+print_r($arr); // Array ([0] => a, [1] => b, [2] => c, ...) a-z alphabetical array
